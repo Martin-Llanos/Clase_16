@@ -5,7 +5,7 @@ describe("Testeando tarea 1 clase 6", () => {
   it("Testea el uso correcto de la aplicacion", () => {
     cy.visit(PATH);
 
-    cy.get('input[id="numero-de-familiares"]').type("2");
+    cy.get('input[id="numero-de-familiares"]').type("5");
     cy.get('button[id="aceptar"]').click();
 
     cy.get('button[id="limpiar"]').should("be.visible");
@@ -24,7 +24,7 @@ describe("Testeando tarea 1 clase 6", () => {
     cy.get('strong[id="resultados"]').should("be.visible");
     cy.get('strong[id="resultados"]').should(
       "have.text",
-      "La mayor edad es 26, la menor edad es 23, y el promedio de edades es 21.5"
+      "La mayor edad es 29, la menor edad es 23, y el promedio de edades es 21.5"
     );
   });
 });
