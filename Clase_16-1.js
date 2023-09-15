@@ -1,5 +1,5 @@
 const PATH = "tareas/clase-6/Tarea-1/tarea1_clase6.html";
-const NUMERO_INTEGRANTES = 2;
+const NUMERO_INTEGRANTES = 5;
 
 describe("Testeando tarea 1 clase 6", () => {
   it("Testea el uso correcto de la aplicacion", () => {
